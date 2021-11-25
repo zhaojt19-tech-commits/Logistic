@@ -124,7 +124,7 @@ if __name__ == "__main__":
     b = np.random.randn()
 
     #利用自己的logistic回归算法训练w_t,b_t
-    w_t, b_t = train(w, b, train_feature, train_Y, 0.1, 50, 32)
+    w_t, b_t = train(w, b, train_feature, train_Y, 0.1, 50, 32)   #echos参数可以改得大一点，实际上每一个echos都应该进行多个batch的梯度下降直到这些batch的数量达到训练集样本数
 
     print("自己写的逻辑回归的参数w, b分别为: ", w_t, b_t,)
 
